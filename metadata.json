@@ -1,0 +1,5 @@
+{
+  "name": "Deployment Automation",
+  "description": "DevOps tool for managing deployment segments and work items.",
+  "requestFramePermissions": []
+}

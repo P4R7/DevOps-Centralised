@@ -1,0 +1,78 @@
+:root {
+  color-scheme: light;
+  --bg-1: #f8fafc;
+  --bg-2: #ffffff;
+  --primary: #3b82f6;
+  --primary-foreground: #ffffff;
+  --success: #10b981;
+  --warning: #f59e0b;
+  --danger: #ef4444;
+  --secondary: #e2e8f0;
+  --secondary-foreground: #0f172a;
+  --text: #0f172a;
+  --text-muted: #64748b;
+  --border: #e2e8f0;
+  --card: #ffffff;
+  --card-foreground: #0f172a;
+  --muted: #f1f5f9;
+  --muted-foreground: #64748b;
+  
+  --background: var(--bg-1);
+  --foreground: var(--text);
+  --bg: var(--bg-1);
+  --fg: var(--text);
+}
+
+[data-theme="dark"] {
+  color-scheme: dark;
+  --bg-1: #0f172a;
+  --bg-2: #1e293b;
+  --primary: #3b82f6;
+  --primary-foreground: #ffffff;
+  --success: #34d399;
+  --warning: #fbbf24;
+  --danger: #f87171;
+  --secondary: #334155;
+  --secondary-foreground: #f8fafc;
+  --text: #f8fafc;
+  --text-muted: #94a3b8;
+  --border: #334155;
+  --card: #1e293b;
+  --card-foreground: #f8fafc;
+  --muted: #0f172a;
+  --muted-foreground: #94a3b8;
+  
+  --background: var(--bg-1);
+  --foreground: var(--text);
+  --bg: var(--bg-1);
+  --fg: var(--text);
+}
+
+body {
+  background-color: var(--bg-1);
+  color: var(--text);
+}
+
+.table tbody tr:hover {
+  background-color: #e2e8f0 !important;
+  transition: background-color 0.2s ease;
+}
+
+[data-theme="dark"] .table tbody tr:hover {
+  background-color: #334155 !important;
+}
+
+[data-theme="dark"] .recharts-text {
+  fill: var(--text-muted) !important;
+}
+
+[data-theme="dark"] .recharts-cartesian-grid-horizontal line,
+[data-theme="dark"] .recharts-cartesian-grid-vertical line {
+  stroke: var(--border) !important;
+}
+
+[data-theme="dark"] .recharts-tooltip-wrapper .recharts-default-tooltip {
+  background-color: var(--bg-2) !important;
+  border-color: var(--border) !important;
+  color: var(--text) !important;
+}
